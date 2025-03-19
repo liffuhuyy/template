@@ -1,39 +1,38 @@
-// Dutch [nl]
+// Afrikaans [af]
 import dayjs from '../index';
 var locale = {
-  name: 'nl',
-  weekdays: 'zondag_maandag_dinsdag_woensdag_donderdag_vrijdag_zaterdag'.split('_'),
-  weekdaysShort: 'zo._ma._di._wo._do._vr._za.'.split('_'),
-  weekdaysMin: 'zo_ma_di_wo_do_vr_za'.split('_'),
-  months: 'januari_februari_maart_april_mei_juni_juli_augustus_september_oktober_november_december'.split('_'),
-  monthsShort: 'jan_feb_mrt_apr_mei_jun_jul_aug_sep_okt_nov_dec'.split('_'),
-  ordinal: function ordinal(n) {
-    return "[" + n + (n === 1 || n === 8 || n >= 20 ? 'ste' : 'de') + "]";
-  },
+  name: 'af',
+  weekdays: 'Minggu_Senin_Selasa_Rabu_Kamis_Jumat_Sabtu'.split('_'),
+  months: 'Januari_Februari_Maret_April_Mei_Juni_Juli_Agustus_September_Oktober_November_Desember'.split('_'),
   weekStart: 1,
-  yearStart: 4,
+  weekdaysShort: 'Min_Sen_Sel_Rab_Kam_Jum_Sab'.split('_'),
+  monthsShort: 'Jan_Feb_Mar_Apr_Mei_Jun_Jul_Agu_Sep_Okt_Nov_Des'.split('_'),
+  weekdaysMin: 'Mi_Se_Sl_Ra_Ka_Ju_Sa'.split('_'),
+  ordinal: function ordinal(n) {
+    return n;
+  },
   formats: {
     LT: 'HH:mm',
     LTS: 'HH:mm:ss',
-    L: 'DD-MM-YYYY',
+    L: 'DD/MM/YYYY',
     LL: 'D MMMM YYYY',
     LLL: 'D MMMM YYYY HH:mm',
-    LLLL: 'dddd D MMMM YYYY HH:mm'
+    LLLL: 'dddd, D MMMM YYYY HH:mm'
   },
   relativeTime: {
-    future: 'over %s',
-    past: '%s geleden',
-    s: 'een paar seconden',
-    m: 'een minuut',
-    mm: '%d minuten',
-    h: 'een uur',
-    hh: '%d uur',
-    d: 'een dag',
-    dd: '%d dagen',
-    M: 'een maand',
-    MM: '%d maanden',
-    y: 'een jaar',
-    yy: '%d jaar'
+    future: 'dalam %s',
+    past: '%s yang lalu',
+    s: "beberapa detik",
+    m: "semenit",
+    mm: '%d menit',
+    h: "sejam",
+    hh: '%d jam',
+    d: "sehari",
+    dd: '%d hari',
+    M: "sebulan",
+    MM: '%d bulan',
+    y: "setahun",
+    yy: '%d tahun'
   }
 };
 dayjs.locale(locale, null, true);
