@@ -1,38 +1,38 @@
-// Swahili [sw]
+// Afrikaans [af]
 import dayjs from '../index';
 var locale = {
-  name: 'sw',
-  weekdays: 'Jumapili_Jumatatu_Jumanne_Jumatano_Alhamisi_Ijumaa_Jumamosi'.split('_'),
-  weekdaysShort: 'Jpl_Jtat_Jnne_Jtan_Alh_Ijm_Jmos'.split('_'),
-  weekdaysMin: 'J2_J3_J4_J5_Al_Ij_J1'.split('_'),
-  months: 'Januari_Februari_Machi_Aprili_Mei_Juni_Julai_Agosti_Septemba_Oktoba_Novemba_Desemba'.split('_'),
-  monthsShort: 'Jan_Feb_Mac_Apr_Mei_Jun_Jul_Ago_Sep_Okt_Nov_Des'.split('_'),
+  name: 'af',
+  weekdays: 'Minggu_Senin_Selasa_Rabu_Kamis_Jumat_Sabtu'.split('_'),
+  months: 'Januari_Februari_Maret_April_Mei_Juni_Juli_Agustus_September_Oktober_November_Desember'.split('_'),
   weekStart: 1,
+  weekdaysShort: 'Min_Sen_Sel_Rab_Kam_Jum_Sab'.split('_'),
+  monthsShort: 'Jan_Feb_Mar_Apr_Mei_Jun_Jul_Agu_Sep_Okt_Nov_Des'.split('_'),
+  weekdaysMin: 'Mi_Se_Sl_Ra_Ka_Ju_Sa'.split('_'),
   ordinal: function ordinal(n) {
     return n;
-  },
-  relativeTime: {
-    future: '%s baadaye',
-    past: 'tokea %s',
-    s: 'hivi punde',
-    m: 'dakika moja',
-    mm: 'dakika %d',
-    h: 'saa limoja',
-    hh: 'masaa %d',
-    d: 'siku moja',
-    dd: 'masiku %d',
-    M: 'mwezi mmoja',
-    MM: 'miezi %d',
-    y: 'mwaka mmoja',
-    yy: 'miaka %d'
   },
   formats: {
     LT: 'HH:mm',
     LTS: 'HH:mm:ss',
-    L: 'DD.MM.YYYY',
+    L: 'DD/MM/YYYY',
     LL: 'D MMMM YYYY',
     LLL: 'D MMMM YYYY HH:mm',
     LLLL: 'dddd, D MMMM YYYY HH:mm'
+  },
+  relativeTime: {
+    future: 'dalam %s',
+    past: '%s yang lalu',
+    s: "beberapa detik",
+    m: "semenit",
+    mm: '%d menit',
+    h: "sejam",
+    hh: '%d jam',
+    d: "sehari",
+    dd: '%d hari',
+    M: "sebulan",
+    MM: '%d bulan',
+    y: "setahun",
+    yy: '%d tahun'
   }
 };
 dayjs.locale(locale, null, true);
