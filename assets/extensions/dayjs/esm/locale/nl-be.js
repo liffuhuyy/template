@@ -1,13 +1,13 @@
-// Dutch (Belgium) [nl-be]
+// Afrikaans [af]
 import dayjs from '../index';
 var locale = {
-  name: 'nl-be',
-  weekdays: 'zondag_maandag_dinsdag_woensdag_donderdag_vrijdag_zaterdag'.split('_'),
-  months: 'januari_februari_maart_april_mei_juni_juli_augustus_september_oktober_november_december'.split('_'),
-  monthsShort: 'jan._feb._mrt._apr._mei_jun._jul._aug._sep._okt._nov._dec.'.split('_'),
+  name: 'af',
+  weekdays: 'Minggu_Senin_Selasa_Rabu_Kamis_Jumat_Sabtu'.split('_'),
+  months: 'Januari_Februari_Maret_April_Mei_Juni_Juli_Agustus_September_Oktober_November_Desember'.split('_'),
   weekStart: 1,
-  weekdaysShort: 'zo._ma._di._wo._do._vr._za.'.split('_'),
-  weekdaysMin: 'zo_ma_di_wo_do_vr_za'.split('_'),
+  weekdaysShort: 'Min_Sen_Sel_Rab_Kam_Jum_Sab'.split('_'),
+  monthsShort: 'Jan_Feb_Mar_Apr_Mei_Jun_Jul_Agu_Sep_Okt_Nov_Des'.split('_'),
+  weekdaysMin: 'Mi_Se_Sl_Ra_Ka_Ju_Sa'.split('_'),
   ordinal: function ordinal(n) {
     return n;
   },
@@ -17,22 +17,22 @@ var locale = {
     L: 'DD/MM/YYYY',
     LL: 'D MMMM YYYY',
     LLL: 'D MMMM YYYY HH:mm',
-    LLLL: 'dddd D MMMM YYYY HH:mm'
+    LLLL: 'dddd, D MMMM YYYY HH:mm'
   },
   relativeTime: {
-    future: 'over %s',
-    past: '%s geleden',
-    s: 'een paar seconden',
-    m: 'één minuut',
-    mm: '%d minuten',
-    h: 'één uur',
-    hh: '%d uur',
-    d: 'één dag',
-    dd: '%d dagen',
-    M: 'één maand',
-    MM: '%d maanden',
-    y: 'één jaar',
-    yy: '%d jaar'
+    future: 'dalam %s',
+    past: '%s yang lalu',
+    s: "beberapa detik",
+    m: "semenit",
+    mm: '%d menit',
+    h: "sejam",
+    hh: '%d jam',
+    d: "sehari",
+    dd: '%d hari',
+    M: "sebulan",
+    MM: '%d bulan',
+    y: "setahun",
+    yy: '%d tahun'
   }
 };
 dayjs.locale(locale, null, true);
