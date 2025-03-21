@@ -132,80 +132,58 @@
             <div class="col-12 col-md-6">
                 <div class="card">
                     <div class="card-header">
-                        <h4 class="card-title">Table with outer spacing</h4>
+                        <h4 class="card-title">Ringkasan absen siswa PKL</h4>
                     </div>
                     <div class="card-content">
                         <div class="card-body">
-                            <p class="card-text">Using the most basic table up, here’s how
-                                <code>.table</code>-based tables look in Bootstrap. You can use any example
-                                of below table for your table and it can be use with any type of bootstrap tables.
-                            </p>
                             <!-- Table with outer spacing -->
+                        </head>
+                        <body>
+                            <div class="btn-group mb-1">
+                                <div class="dropdown">
+                                    <button class="btn btn-primary dropdown-toggle me-1" type="button" id="jurusanDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Jurusan
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="jurusanDropdown">
+                                        <a class="dropdown-item" href="#" onclick="filterData('jurusan', 'All')">Jurusan</a>
+                                        <a class="dropdown-item" href="#" onclick="filterData('jurusan', 'AKL')">AKL</a>
+                                        <a class="dropdown-item" href="#" onclick="filterData('jurusan', 'MPLB')">MPLB</a>
+                                        <a class="dropdown-item" href="#" onclick="filterData('jurusan', 'BDP')">BDP</a>
+                                        <a class="dropdown-item" href="#" onclick="filterData('jurusan', 'RPL')">RPL</a>
+                                        <a class="dropdown-item" href="#" onclick="filterData('jurusan', 'TKJ')">TKJ</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-group mb-1">
+                                <div class="dropdown">
+                                    <button class="btn btn-primary dropdown-toggle me-1" type="button" id="bulanDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Bulan
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="bulanDropdown">
+                                        <a class="dropdown-item" href="#" onclick="filterData('bulan', 'All')">Bulan</a>
+                                        <a class="dropdown-item" href="#" onclick="filterData('bulan', 'Januari')">Januari</a>
+                                        <a class="dropdown-item" href="#" onclick="filterData('bulan', 'Februari')">Februari</a>
+                                        <a class="dropdown-item" href="#" onclick="filterData('bulan', 'Maret')">Maret</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-group mb-1">
+                                <div class="dropdown">
+                                    <button class="btn btn-primary dropdown-toggle me-1" type="button" id="tahunDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Tahun
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="tahunDropdown">
+                                        <a class="dropdown-item" href="#" onclick="filterData('tahun', 'All')">Tahun</a>
+                                        <a class="dropdown-item" href="#" onclick="filterData('tahun', '2025')">2025</a>
+                                        <a class="dropdown-item" href="#" onclick="filterData('tahun', '2026')">2026</a>
+                                        <a class="dropdown-item" href="#" onclick="filterData('tahun', '2027')">2027</a>
+                                    </div>
+                                </div>
+                            </div>
+                        
                             <div class="table-responsive">
                                 <table class="table table-lg">
                                     <thead>
-
-                                        <div class="btn-group mb-1">
-                                            <div class="dropdown">
-                                                <button class="btn btn-primary dropdown-toggle me-1" type="button"
-                                                    id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false">
-                                                    Jurusan
-                                                </button>
-                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                    <a class="dropdown-item" href="#">AKL</a>
-                                                    <a class="dropdown-item" href="#">MPLB</a>
-                                                    <a class="dropdown-item" href="#">BDP</a>
-                                                    <a class="dropdown-item" href="#">RPL</a>
-                                                    <a class="dropdown-item" href="#">TKJ</a>
-                                                    <a class="dropdown-item" href="#">DKV</a>
-                                                    <a class="dropdown-item" href="#">TO</a>
-                                                    <a class="dropdown-item" href="#">TM</a>
-                                                    <a class="dropdown-item" href="#">TL</a>
-                                                    <a class="dropdown-item" href="#">KL</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="btn-group mb-1">
-                                            <div class="dropdown">
-                                                <button class="btn btn-primary dropdown-toggle me-1" type="button"
-                                                    id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false">
-                                                    Bulan
-                                                </button>
-                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                    <a class="dropdown-item" href="#">Januari</a>
-                                                    <a class="dropdown-item" href="#">Februari</a>
-                                                    <a class="dropdown-item" href="#">Maret</a>
-                                                    <a class="dropdown-item" href="#">April</a>
-                                                    <a class="dropdown-item" href="#">Mei</a>
-                                                    <a class="dropdown-item" href="#">Juli</a>
-                                                    <a class="dropdown-item" href="#">Juni</a>
-                                                    <a class="dropdown-item" href="#">Agustus</a>
-                                                    <a class="dropdown-item" href="#">September</a>
-                                                    <a class="dropdown-item" href="#">Oktober</a>
-                                                    <a class="dropdown-item" href="#">November</a>
-                                                    <a class="dropdown-item" href="#">Desember</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="btn-group mb-1">
-                                            <div class="dropdown">
-                                                <button class="btn btn-primary dropdown-toggle me-1" type="button"
-                                                    id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false">
-                                                    Tahun
-                                                </button>
-                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                    <a class="dropdown-item" href="#">2025</a>
-                                                    <a class="dropdown-item" href="#">2026</a>
-                                                    <a class="dropdown-item" href="#">2027</a>
-                                                    <a class="dropdown-item" href="#">2028</a>
-                                                    <a class="dropdown-item" href="#">2029</a>
-                                                    <a class="dropdown-item" href="#">2030</a>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <tr>
                                             <th>No</th>
                                             <th>Nama</th>
@@ -217,66 +195,69 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="text-bold-500">1</td>
+                                            <td>1</td>
                                             <td>Lucian</td>
-                                            <td class="text-bold-500">TKJ</td>
-                                            <td class="text-bold-500">PT. IBNU</td>
-                                            <td class="text-bold-500">09.00 WIB</td>
-                                            <td class="text-bold-500">Hadir</td>
-
+                                            <td>TKJ</td>
+                                            <td>PT. IBNU</td>
+                                            <td>09.00 WIB Januari 2025</td>
+                                            <td>Hadir</td>
                                         </tr>
                                         <tr>
-                                            <td class="text-bold-500">1</td>
-                                            <td>Lucian</td>
-                                            <td class="text-bold-500">TKJ</td>
-                                            <td class="text-bold-500">PT. IBNU</td>
-                                            <td class="text-bold-500">09.00 WIB</td>
-                                            <td class="text-bold-500">Hadir</td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">1</td>
-                                            <td>Lucian</td>
-                                            <td class="text-bold-500">TKJ</td>
-                                            <td class="text-bold-500">PT. IBNU</td>
-                                            <td class="text-bold-500">09.00 WIB</td>
-                                            <td class="text-bold-500">Hadir</td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">1</td>
-                                            <td>Lucian</td>
-                                            <td class="text-bold-500">TKJ</td>
-                                            <td class="text-bold-500">PT. IBNU</td>
-                                            <td class="text-bold-500">09.00 WIB</td>
-                                            <td class="text-bold-500">Hadir</td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">1</td>
-                                            <td>Lucian</td>
-                                            <td class="text-bold-500">TKJ</td>
-                                            <td class="text-bold-500">PT. IBNU</td>
-                                            <td class="text-bold-500">09.00 WIB</td>
-                                            <td class="text-bold-500">Hadir</td>
-
+                                            <td>2</td>
+                                            <td>Alice</td>
+                                            <td>RPL</td>
+                                            <td>PT. XYZ</td>
+                                            <td>10.00 WIB Februari 2025</td>
+                                            <td>Hadir</td>
                                         </tr>
                                     </tbody>
                                 </table>
-                            </div>
-                        </div>
+                          </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <script src="assets/static/js/components/dark.js"></script>
-    <script src="assets/extensions/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-    
-    
+    <script src="assets/extensions/perfect-scrollbar/perfect-scrollbar.min.js"></script> 
     <script src="assets/compiled/js/app.js"></script>
-    
+    <script>
+        function updateDropdown(buttonId, value) {
+            document.getElementById(buttonId).textContent = value;
+        }
 
+        const filterCriteria = { jurusan: '', bulan: '', tahun: '' };
+
+        function filterData(type, value) {
+            filterCriteria[type] = value;
+
+            // Update dropdown button label
+            if (type === 'jurusan') {
+                updateDropdown('jurusanDropdown', value === 'All' ? 'Jurusan' : value);
+            } else if (type === 'bulan') {  
+                updateDropdown('bulanDropdown', value === 'All' ? 'Bulan' : value);
+            } else if (type === 'tahun') {
+                updateDropdown('tahunDropdown', value === 'All' ? 'Tahun' : value);
+            }
+
+            // Filter table rows
+            const rows = document.querySelectorAll("tbody tr");
+            rows.forEach(row => {
+                const jurusanCell = row.cells[2].textContent;
+                const waktuCell = row.cells[4].textContent;
+
+                const matchesJurusan = !filterCriteria.jurusan || filterCriteria.jurusan === 'All' || jurusanCell.includes(filterCriteria.jurusan);
+                const matchesBulan = !filterCriteria.bulan || filterCriteria.bulan === 'All' || waktuCell.includes(filterCriteria.bulan);
+                const matchesTahun = !filterCriteria.tahun || filterCriteria.tahun === 'All' || waktuCell.includes(filterCriteria.tahun);
+
+                if (matchesJurusan && matchesBulan && matchesTahun) {
+                    row.style.display = "";
+                } else {
+                    row.style.display = "none";
+                }
+            });
+        }
+    </script>
     
 </body>
 
